@@ -119,10 +119,12 @@ header {
   position: absolute;
   bottom: 0;
   font-size: 3rem;
-  margin-bottom: 2rem;
   color: var(--blanco);
   cursor: pointer;
   transition: transform 0.2s ease;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: black;
+  padding: 2rem;
   animation-name: chevron_down;
   animation-duration: 1.2s;
   animation-iteration-count: 4;
