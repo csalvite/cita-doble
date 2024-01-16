@@ -30,3 +30,17 @@ main {
   align-items: center;
   width: 100%;
 }
+
+.full-container {
+  width: 100%;
+}
+
+.container-80 {
+  width: 80%;
+  height: 100%;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

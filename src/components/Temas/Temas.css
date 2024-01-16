@@ -3,8 +3,10 @@ section#temas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
+  min-height: 100%;
   width: 100%;
-  padding: 5rem 4rem;
+  padding: 4rem 4rem;
   background-color: var(--negro2);
 }
 
@@ -15,11 +17,22 @@ section#temas > h2 {
   font-style: italic;
 }
 
-section#temas > div.temas-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  width: 70%;
+section#temas h3 {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  text-align: left;
+  color: var(--blanco);
+}
+
+section#temas div.temas-container {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  justify-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 section#temas iframe {
@@ -28,8 +41,16 @@ section#temas iframe {
   border: none;
 }
 
+.cifras-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
 @media (max-width: 1500px) {
-  section#temas > div.temas-container {
+  section#temas div.temas-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +59,7 @@ section#temas iframe {
 }
 
 @media (max-width: 1000px) {
-  section#temas > div.temas-container {
+  section#temas div.temas-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -53,7 +74,7 @@ section#temas iframe {
 }
 
 @media (max-width: 850px) {
-  section#temas > div.temas-container {
+  section#temas div.temas-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -69,7 +90,7 @@ section#temas iframe {
 }
 
 @media (max-width: 750px) {
-  section#temas > div.temas-container {
+  section#temas div.temas-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

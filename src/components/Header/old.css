@@ -1,0 +1,36 @@
+#header-container > .img-logo-container {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#header-container > .img-logo-container:hover {
+  transform: translateY(-100px);
+}
+
+#header-container > .img-logo-container:hover::after {
+  content: 'Cita Doble';
+  position: absolute;
+  top: 100%; /* Posición debajo del logo */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem; /* Tamaño del texto, ajusta según sea necesario */
+  font-family: inherit; /* Utiliza la fuente heredada */
+  color: var(--negro); /* Cambia el color del texto según tu preferencia */
+  opacity: 0; /* Inicialmente transparente */
+  transition: opacity 0.3s ease;
+}
+
+#header-container > .img-logo-container:hover::before {
+  content: ''; /* Puedes agregar un fondo si lo deseas */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Detrás del texto */
+}
+
+#header-container > .img-logo-container:hover::after,
+#header-container > .img-logo-container:hover::before {
+  opacity: 1; /* Hacer visible cuando se coloca el ratón sobre el logo */
+}
