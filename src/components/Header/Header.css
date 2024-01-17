@@ -71,12 +71,13 @@ header {
 }
 
 #header-container img {
-  width: 20rem;
-  animation-name: spin_logo;
+  width: 40rem;
+  transform: rotate(-10deg);
+  /* animation-name: spin_logo;
   animation-duration: 2.5s;
   animation-direction: alternate;
   animation-iteration-count: 4;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 #chevron-down {
