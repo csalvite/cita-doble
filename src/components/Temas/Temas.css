@@ -3,21 +3,21 @@ section#temas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  padding-top: 3rem;
+  gap: 3rem;
   min-height: 100%;
   width: 100%;
-  padding: 4rem 4rem;
-  background-color: var(--negro2);
+  background-color: var(--negro3);
 }
 
 section#temas > h2 {
   font-size: 3rem;
-  padding-bottom: 2rem;
   color: var(--blanco);
   font-style: italic;
 }
 
 section#temas div.temas-container {
+  padding: 4rem 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
