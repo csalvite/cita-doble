@@ -11,6 +11,7 @@ import 'swiper/css/scrollbar';
 import { Header } from './Header/Header';
 import { Temas } from './Temas/Temas';
 import { Footer } from './Footer/Footer';
+import { SwiperEffectGallery } from './SwiperEffectGallery/SwiperEffectGallery';
 
 export const PruebaSwiper = () => {
   const handleMenuItemClick = (slideIndex) => {
@@ -54,9 +55,7 @@ export const PruebaSwiper = () => {
         <Header menuClick={handleMenuItemClick} />
       </SwiperSlide>
       <SwiperSlide data-hash='slide3'>
-        <main>
-          <Temas />
-        </main>
+        <SwiperEffectGallery menuClick={handleMenuItemClick} />
       </SwiperSlide>
       <SwiperSlide data-hash='slide4'>
         <div className='app'>
