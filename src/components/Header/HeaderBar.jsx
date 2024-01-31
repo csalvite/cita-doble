@@ -1,32 +1,24 @@
 import './Header.css';
 import logo from '../../assets/logo.png';
 
-export const HeaderBar = () => {
+export const HeaderBar = ({ menuClick }) => {
   return (
     <section id='header-bar'>
       <img src={logo} alt='logo-cita-doble' />
 
       <nav>
         <ul>
-          <li>
-            <a className='enlace' href='#inicio'>
-              Inicio
-            </a>
+          <li onClick={() => menuClick(0)}>
+            <a className='enlace'>Inicio</a>
           </li>
-          <li>
-            <a className='enlace' href='#temas'>
-              Temas
-            </a>
+          <li onClick={() => menuClick(1)}>
+            <a className='enlace'>Temas</a>
           </li>
-          <li>
-            <a className='enlace' href='#galeria'>
-              Galería
-            </a>
+          <li onClick={() => menuClick(2)}>
+            <a className='enlace'>Galería</a>
           </li>
-          <li>
-            <a className='enlace' href='#sobre-nos'>
-              Sobre Nós
-            </a>
+          <li onClick={() => menuClick(3)}>
+            <a className='enlace'>Sobre Nós</a>
           </li>
         </ul>
       </nav>
