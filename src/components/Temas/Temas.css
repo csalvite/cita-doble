@@ -14,12 +14,14 @@ section#temas > h2 {
   font-size: 3rem;
   color: var(--blanco);
   font-style: italic;
+  text-align: left;
+  width: 80%;
 }
 
 section#temas div.temas-container {
-  padding: 4rem 4rem;
+  padding: 2rem 10rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 1fr;
   justify-items: center;
   /* display: flex;
   flex-direction: column;
@@ -28,9 +30,35 @@ section#temas div.temas-container {
   width: 100%;
 }
 
+div.temas-container div.temas-img-container {
+  color: var(--blanco);
+  padding: 2rem;
+  text-align: justify;
+  width: 100%;
+  background-image: url(../../assets/cita-doble-imagenes/CitaDoble_23.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+div.temas-container div.temas-img-container:hover {
+  transform: scale(1.05);
+}
+
+div.temas-container div.temas-img-container h3 {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 section#temas iframe {
   width: 80%;
-  height: 250px;
+  height: 450px;
   border: none;
 }
 
