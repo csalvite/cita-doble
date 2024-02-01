@@ -7,7 +7,15 @@ section#temas {
   gap: 3rem;
   min-height: 100%;
   width: 100%;
-  background-color: var(--negro3);
+  /* background-color: var(--negro3); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 30%,
+    rgba(9, 9, 121, 1) 78%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding-bottom: 3rem;
 }
 
 section#temas > h2 {
@@ -64,24 +72,25 @@ section#temas iframe {
 
 @media (max-width: 1500px) {
   section#temas div.temas-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 2rem;
+  }
+
+  section#temas iframe {
+    width: 100%;
   }
 }
 
 @media (max-width: 1000px) {
   section#temas div.temas-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    justify-items: center;
-    width: 70%;
+    width: 100%;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+
+    padding: 2rem 1rem;
   }
 
   section#temas iframe {
-    width: 250px;
+    width: 100%;
     height: 380px;
     border: none;
   }

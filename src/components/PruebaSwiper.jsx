@@ -12,6 +12,7 @@ import { Header } from './Header/Header';
 import { Temas } from './Temas/Temas';
 import { Footer } from './Footer/Footer';
 import { SwiperEffectGallery } from './SwiperEffectGallery/SwiperEffectGallery';
+import { TemasPage } from './Temas/TemasPage';
 
 export const PruebaSwiper = () => {
   const handleMenuItemClick = (slideIndex) => {
@@ -52,7 +53,7 @@ export const PruebaSwiper = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide data-hash='slide2'>
-        <Header menuClick={handleMenuItemClick} />
+        <TemasPage menuClick={handleMenuItemClick} />
       </SwiperSlide>
       <SwiperSlide data-hash='slide3'>
         <SwiperEffectGallery menuClick={handleMenuItemClick} />
