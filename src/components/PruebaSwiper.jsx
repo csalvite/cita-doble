@@ -13,12 +13,28 @@ import { Temas } from './Temas/Temas';
 import { Footer } from './Footer/Footer';
 import { SwiperEffectGallery } from './SwiperEffectGallery/SwiperEffectGallery';
 import { TemasPage } from './Temas/TemasPage';
+import { ImageGallery } from './SwiperEffectGallery/ImageGallery';
+import { useEffect, useState } from 'react';
 
 export const PruebaSwiper = () => {
+  const [images, setImages] = useState([]);
   const handleMenuItemClick = (slideIndex) => {
     // Lógica para navegar a la diapositiva correspondiente
     swiper.slideTo(slideIndex);
   };
+
+  useEffect(() => {
+    const imgs = [];
+    for (let i = 1; i < 10; i++) {
+      imgs.push(
+        `/src/assets/cita-doble-imagenes/CitaDoble_${Math.floor(
+          Math.random() * 40
+        )}.jpg`
+      );
+    }
+
+    setImages(imgs);
+  }, []);
 
   return (
     <Swiper
@@ -56,7 +72,8 @@ export const PruebaSwiper = () => {
         <TemasPage menuClick={handleMenuItemClick} />
       </SwiperSlide>
       <SwiperSlide data-hash='slide3'>
-        <SwiperEffectGallery menuClick={handleMenuItemClick} />
+        {/* <SwiperEffectGallery menuClick={handleMenuItemClick} /> */}
+        <ImageGallery menuClick={handleMenuItemClick} images={images} />
       </SwiperSlide>
       <SwiperSlide data-hash='slide4'>
         <div className='app'>

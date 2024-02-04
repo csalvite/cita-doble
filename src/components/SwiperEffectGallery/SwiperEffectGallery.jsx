@@ -1,11 +1,10 @@
-import { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.css';
+import imagenUrl from '../../assets/cita-doble-imagenes/CitaDoble_1.jpg';
+import 'swiper/css'; // Importa los estilos básicos de Swiper
+import 'swiper/css/pagination'; // Importa los estilos de la paginación si los estás utilizando
+import 'swiper/css/navigation';
 
 import './SwiperEffectGallery.css';
 
@@ -19,23 +18,13 @@ export const SwiperEffectGallery = ({ menuClick }) => {
       <HeaderBar menuClick={menuClick} />
       <div className='swiper-gallery-container'>
         <Swiper
-          effect={'coverflow'}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          pagination={true}
-          modules={[EffectCoverflow, Pagination]}
-          className='mySwiper'
+          fill={'row'}
+          rows={2}
+          spaceBetween={10} // Espacio entre las imágenes
+          slidesPerView={'auto'} // Número de slides por vista (columnas)
         >
           <SwiperSlide>
-            <img src='https://swiperjs.com/demos/images/nature-1.jpg' />
+            <img src={imagenUrl} />
           </SwiperSlide>
           <SwiperSlide>
             <img src='https://swiperjs.com/demos/images/nature-2.jpg' />

@@ -11,19 +11,19 @@ export const Footer = () => {
       </div>
       <div className='footer-rrss'>
         <ul>
-          <li>
+          <li id='yt'>
             <i className='fa-brands fa-youtube'></i>
           </li>
-          <li>
+          <li id='ig'>
             <i className='fa-brands fa-instagram'></i>
           </li>
-          <li>
+          <li id='tk'>
             <i className='fa-brands fa-tiktok'></i>
           </li>
-          <li>
+          <li id='sp'>
             <i className='fa-brands fa-spotify'></i>
           </li>
-          <li>
+          <li id='tw'>
             <i className='fa-brands fa-square-x-twitter'></i>
           </li>
         </ul>

@@ -17,12 +17,38 @@ html {
   --negro3: #1e1e1e;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .app {
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  /* width: 100vw; */
+}
+
+.main {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 10%,
+    rgba(9, 9, 121, 1) 58%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* padding-bottom: 3rem; */
+}
+
+/* HOME */
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transition: all 2s;
 }
 
 main {
