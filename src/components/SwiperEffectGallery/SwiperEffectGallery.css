@@ -1,3 +1,7 @@
+.gallery-container {
+  margin-top: -20rem;
+}
+
 .gallery-container #header-bar {
   align-self: start;
 }

@@ -16,24 +16,10 @@ import { ImageGallery } from './SwiperEffectGallery/ImageGallery';
 import { useEffect, useState } from 'react';
 
 export const Home = () => {
-  const [images, setImages] = useState([]);
   const handleMenuItemClick = (slideIndex) => {
     // Lógica para navegar a la diapositiva correspondiente
     swiper.slideTo(slideIndex);
   };
-
-  useEffect(() => {
-    const imgs = [];
-    for (let i = 1; i <= 10; i++) {
-      imgs.push(
-        `/src/assets/cita-doble-imagenes/CitaDoble_${Math.round(
-          Math.random() * 39
-        )}.jpg`
-      );
-    }
-
-    setImages(imgs);
-  }, []);
 
   return (
     <ScrollContainer className='main'>
@@ -51,7 +37,7 @@ export const Home = () => {
         </Animator>
       </ScrollPage>
 
-      <ImageGallery images={images} />
+      <ImageGallery />
 
       <Footer />
     </ScrollContainer>
