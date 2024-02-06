@@ -5,9 +5,7 @@ import { usePhotos } from '../../hooks/usePhotos';
 
 const { VITE_REACT_APP_BACKIMAGE } = import.meta.env;
 
-export const ImageGallery = ({ menuClick = null }) => {
-  const { photos, error, loading } = usePhotos();
-
+export const ImageGallery = ({ menuClick = null, photos, error, loading }) => {
   return (
     <div className='gallery-container'>
       <section id='gallery-grid-images'>

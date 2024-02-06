@@ -11,7 +11,6 @@ import 'swiper/css/scrollbar';
 import { Header } from './Header/Header';
 import { Temas } from './Temas/Temas';
 import { Footer } from './Footer/Footer';
-import { SwiperEffectGallery } from './SwiperEffectGallery/SwiperEffectGallery';
 import { TemasPage } from './Temas/TemasPage';
 import { ImageGallery } from './SwiperEffectGallery/ImageGallery';
 import { useEffect, useState } from 'react';

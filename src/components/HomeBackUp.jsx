@@ -15,7 +15,7 @@ import { TemasPage } from './Temas/TemasPage';
 import { ImageGallery } from './SwiperEffectGallery/ImageGallery';
 import { useEffect, useState } from 'react';
 
-export const Home = () => {
+export const Home = ({ photos, error, loading }) => {
   const handleMenuItemClick = (slideIndex) => {
     // Lógica para navegar a la diapositiva correspondiente
     swiper.slideTo(slideIndex);
@@ -37,7 +37,7 @@ export const Home = () => {
         </Animator>
       </ScrollPage>
 
-      <ImageGallery />
+      <ImageGallery photos={photos} error={error} loading={loading} />
 
       <Footer />
     </ScrollContainer>
