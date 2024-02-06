@@ -1,7 +1,7 @@
 section#temas {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 3rem;
   gap: 3rem;
@@ -60,6 +60,7 @@ div.temas-container div.temas-img-container:hover {
 }
 
 div.temas-container div.temas-img-container h3 {
+  color: var(--blanco) !important;
   font-size: 1.2rem;
   text-align: left;
 }

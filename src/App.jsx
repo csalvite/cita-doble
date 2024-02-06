@@ -7,9 +7,17 @@ import { SobreNos } from './components/SobreNos/SobreNos';
 import { Temas } from './components/Temas/Temas';
 import { usePhotos } from './hooks/usePhotos';
 import loadingSpinner from './assets/tail-spin.svg';
+import { useEffect } from 'react';
 
 function App() {
   const { photos, error, loading } = usePhotos();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
 
   return (
     <div className='app'>

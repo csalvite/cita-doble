@@ -30,16 +30,22 @@ export const Home = ({ photos, error, loading }) => {
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator animation={MoveIn(-300, 0)}>
+        <Animator style={{ height: '100%' }} animation={MoveIn(-300, 0)}>
           <section id='temas'>
             <Temas />
           </section>
         </Animator>
       </ScrollPage>
-
-      <ImageGallery photos={photos} error={error} loading={loading} />
-
-      <Footer />
+      <ScrollPage style={{ height: '100%' }}>
+        <Animator animation={Fade()} style={{ paddingTop: '5rem' }}>
+          <ImageGallery photos={photos} error={error} loading={loading} />
+        </Animator>
+      </ScrollPage>
+      <ScrollPage style={{ height: '100%' }}>
+        <Animator>
+          <Footer />
+        </Animator>
+      </ScrollPage>
     </ScrollContainer>
   );
 };

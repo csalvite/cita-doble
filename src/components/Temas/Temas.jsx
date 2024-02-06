@@ -4,7 +4,7 @@ import { TemasList } from './TemasList';
 export const Temas = () => {
   return (
     <>
-      <h2>Escoita o noso último álbum</h2>
+      <h2>ÚLTIMO ALBUM</h2>
       <TemasList />
     </>
   );

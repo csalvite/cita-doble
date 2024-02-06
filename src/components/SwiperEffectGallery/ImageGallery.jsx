@@ -13,7 +13,7 @@ export const ImageGallery = ({ menuClick = null, photos, error, loading }) => {
           <p>CARGANDO</p>
         ) : (
           <>
-            <h2>Galería de Imaxes</h2>
+            <h2>GALERÍA DE IMAXES</h2>
             <div className='grid-images'>
               {error && <p>Error al obtener las imágenes.</p>}
               {photos.length > 0 &&
@@ -27,6 +27,7 @@ export const ImageGallery = ({ menuClick = null, photos, error, loading }) => {
                       <img
                         src={`${VITE_REACT_APP_BACKIMAGE}/${photo.name}`}
                         alt={`Imagen ${photo.id} `}
+                        loading='lazy'
                       />
                     </div>
                   );

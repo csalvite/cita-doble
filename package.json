@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-loading-skeleton": "^3.4.0",
     "react-scroll-motion": "^0.3.3",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -29,6 +30,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "image-webpack-loader": "^8.1.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.8"
